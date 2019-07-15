@@ -1,0 +1,25 @@
+.caja {
+    width: 20%;
+    height: 300px;
+    background-color: #fefefe;
+    border: 1px solid black;
+    padding: 0px;
+}
+.caja .header {
+    background-color: #cecece;
+    position: relative;
+    top: 0;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px; 
+    border-bottom: 1px solid black;
+}
+.caja .header h2 {
+    margin: 0;
+}
+.caja .body {
+    height: 229px;
+    overflow-x: hidden;
+    overflow-x: auto;
+}
