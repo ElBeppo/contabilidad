@@ -8,6 +8,8 @@ var app = express();
 
 // cargar archivos de rutas
 var supermercado_routes = require('./routes/supermercado');
+var tipo_routes = require('./routes/tipo');
+var factura_routes = require('./routes/factura');
 //var project_routes = require('./rutes/project');
 
 // middlewares
@@ -26,6 +28,8 @@ app.use((req, res, next) => {
 
 //rutas
 app.use('/api', supermercado_routes);
+app.use('/api', tipo_routes);
+app.use('/api', factura_routes);
 //app.use('/api', project_routes); // si lo deajas en / se mantiene la ruta, si le añades algo seria /algo/ruta
 //Exportar
 module.exports = app;
